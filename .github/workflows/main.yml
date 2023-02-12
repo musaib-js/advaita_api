@@ -18,7 +18,5 @@ jobs:
           script: |
             pm2 delete advaita --silent
             cd advaita
-            git reset --hard HEAD
-            git clean -f -d
             git pull
             pm2 start manage.py --interpreter=./venv/bin/python --name advaita -- runserver
