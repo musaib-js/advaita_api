@@ -10,4 +10,4 @@ class ContactSerializer(serializers.ModelSerializer):
 class SponsorshipSerializer(serializers.ModelSerializer):
      class Meta:
         model = Sponsorship
-        fields = ['email', 'company_name', 'contact_person', 'designation', 'mail', 'sponsorship_type']
+        fields = ['email', 'company_name', 'contact_person', 'designation', 'proposal']

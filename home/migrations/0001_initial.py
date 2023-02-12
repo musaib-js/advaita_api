@@ -29,8 +29,7 @@ class Migration(migrations.Migration):
                 ('company_name', models.CharField(max_length=200)),
                 ('contact_person', models.CharField(max_length=200)),
                 ('designation', models.CharField(max_length=200)),
-                ('mail', models.EmailField(max_length=200)),
-                ('sponsorship_type', models.CharField(max_length=200)),
+                ('proposal', models.TextField()),
             ],
         ),
     ]
