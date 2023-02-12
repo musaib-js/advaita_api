@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
+CSRF_TRUSTED_ORIGINS = ['*.advaita-iiitbh.in']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
